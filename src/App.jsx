@@ -1,15 +1,14 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-10">
+    <main className="min-h-screen bg-white text-gray-900 p-6 md:p-10">
       <header className="mb-10 text-center">
-        <h1 className="text-5xl font-bold mb-4">LEANBuilds</h1>
+        <h1 className="text-5xl font-bold mb-6">LEANBuilds</h1>
 
-        <div className="my-8 flex justify-center">
+        {/* Responsive Video Embed */}
+        <div className="relative w-full max-w-5xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-lg">
           <iframe
-            width="720"
-            height="405"
-            className="rounded-2xl shadow-lg"
-            src="https://www.youtube.com/embed/05igvHdNQyk?autoplay=1&mute=1"
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/05igvHdNQyk?autoplay=1&mute=1&playsinline=1"
             title="LEANBuilds Introduction Video"
             frameBorder="0"
             allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
@@ -17,7 +16,7 @@ export default function Home() {
           ></iframe>
         </div>
 
-        <p className="text-lg max-w-4xl mx-auto">
+        <p className="text-lg max-w-4xl mx-auto mt-8">
           We bridge the gap between physical assets and digital tools. By harnessing emerging technologies, we empower designers, contractors, and owners to make faster, smarter decisions. Our deliverables are tailored to maximize the impact of your time, providing accurate, actionable data you can trust.
         </p>
       </header>
