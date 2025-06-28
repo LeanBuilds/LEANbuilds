@@ -9,10 +9,10 @@ export default function Home() {
             width="720"
             height="405"
             className="rounded-2xl shadow-lg"
-            src="https://www.youtube.com/embed/05igvHdNQyk"
+            src="https://www.youtube.com/embed/05igvHdNQyk?autoplay=1&mute=1"
             title="LEANBuilds Introduction Video"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
