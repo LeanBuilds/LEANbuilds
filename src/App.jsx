@@ -10,9 +10,10 @@ function App() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
         minHeight: "100vh",
         padding: "40px",
+        paddingBottom: "80px", // space for footer
+        boxSizing: "border-box",
         backgroundColor: "#ffffff"
       }}
     >
@@ -89,6 +90,24 @@ function App() {
             {hoverText}
           </p>
         )}
+      </div>
+
+      {/* Sticky footer */}
+      <div
+        style={{
+          position: "fixed",
+          bottom: 0,
+          width: "100%",
+          textAlign: "center",
+          padding: "10px 0",
+          fontSize: "0.85rem",
+          color: "#999",
+          backgroundColor: "#fff",
+          borderTop: "1px solid #eee"
+        }}
+      >
+        <div>Serving North Bay and nearby regions.</div>
+        <div>jesse.graham@leanbuilds.ca</div>
       </div>
     </div>
   );
