@@ -111,3 +111,84 @@ function App() {
               </ul>
             </div>
           )}
+
+          {/* AEC DESIGNERS */}
+          <h2
+            onClick={() => toggleSection("designers")}
+            onMouseEnter={() => toggleSection("designers")}
+            style={{
+              cursor: "pointer",
+              fontSize: "1.5rem",
+              marginBottom: "10px",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              padding: "12px",
+              borderRadius: "8px"
+            }}
+          >
+            🧱 AEC DESIGNERS
+          </h2>
+          {activeSection === "designers" && (
+            <div
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                padding: "20px",
+                borderRadius: "10px",
+                marginBottom: "20px"
+              }}
+            >
+              <p>Placeholder for AEC DESIGNERS content...</p>
+            </div>
+          )}
+
+          {/* OWNERS / STAKEHOLDERS */}
+          <h2
+            onClick={() => toggleSection("owners")}
+            onMouseEnter={() => toggleSection("owners")}
+            style={{
+              cursor: "pointer",
+              fontSize: "1.5rem",
+              marginBottom: "10px",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              padding: "12px",
+              borderRadius: "8px"
+            }}
+          >
+            🧭 OWNERS / STAKEHOLDERS
+          </h2>
+          {activeSection === "owners" && (
+            <div
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                padding: "20px",
+                borderRadius: "10px",
+                marginBottom: "20px"
+              }}
+            >
+              <p>Placeholder for OWNERS / STAKEHOLDERS content...</p>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Sticky footer */}
+      <div
+        style={{
+          position: "fixed",
+          bottom: 0,
+          width: "100%",
+          textAlign: "center",
+          padding: "10px 0",
+          fontSize: "0.85rem",
+          color: "#ccc",
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          borderTop: "1px solid #444"
+        }}
+      >
+        <div>Serving North Bay and nearby regions.</div>
+        <div>jesse.graham@leanbuilds.ca</div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
