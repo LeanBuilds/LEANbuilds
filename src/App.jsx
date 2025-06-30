@@ -4,7 +4,7 @@ function App() {
   return (
     <div
       style={{
-        fontFamily: "Segoe UI", 
+        fontFamily: "Segoe UI",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -16,7 +16,7 @@ function App() {
     >
       <div style={{ maxWidth: "800px", width: "100%", textAlign: "center" }}>
         <h1 style={{ fontSize: "3rem", fontWeight: "700", marginBottom: "0.5rem" }}>
-          LEANBuilds
+          LEANBuilds.ca
         </h1>
         <p style={{ fontSize: "1.25rem", color: "#333", marginBottom: "3rem" }}>
           Welcome to the LEANBuilds website.
