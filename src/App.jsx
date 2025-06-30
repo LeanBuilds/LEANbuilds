@@ -18,8 +18,9 @@ function App() {
         <h1 style={{ fontSize: "3rem", fontWeight: "700", marginBottom: "0.5rem" }}>
           LEANBuilds.ca
         </h1>
+
         <p style={{ fontSize: "1.25rem", color: "#333", marginBottom: "3rem" }}>
-          Welcome to the LEANBuilds website.
+          Less waste. More clarity. Better decisions.
         </p>
 
         <div
@@ -39,8 +40,8 @@ function App() {
               color: "#0044cc",
               transition: "color 0.2s"
             }}
-            onMouseOver={e => (e.target.style.color = "#001f66")}
-            onMouseOut={e => (e.target.style.color = "#0044cc")}
+            onMouseOver={(e) => (e.target.style.color = "#001f66")}
+            onMouseOut={(e) => (e.target.style.color = "#0044cc")}
           >
             CONTRACTORS
           </a>
@@ -53,8 +54,8 @@ function App() {
               color: "#0044cc",
               transition: "color 0.2s"
             }}
-            onMouseOver={e => (e.target.style.color = "#001f66")}
-            onMouseOut={e => (e.target.style.color = "#0044cc")}
+            onMouseOver={(e) => (e.target.style.color = "#001f66")}
+            onMouseOut={(e) => (e.target.style.color = "#0044cc")}
           >
             AEC DESIGNERS
           </a>
@@ -67,8 +68,8 @@ function App() {
               color: "#0044cc",
               transition: "color 0.2s"
             }}
-            onMouseOver={e => (e.target.style.color = "#001f66")}
-            onMouseOut={e => (e.target.style.color = "#0044cc")}
+            onMouseOver={(e) => (e.target.style.color = "#001f66")}
+            onMouseOut={(e) => (e.target.style.color = "#0044cc")}
           >
             OWNERS / STAKEHOLDERS
           </a>
