@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
+  const [activeSection, setActiveSection] = useState(null);
+
+  const toggleSection = (section) => {
+    setActiveSection((prev) => (prev === section ? null : section));
+  };
+
   return (
     <div style={{ position: "relative", overflow: "hidden", minHeight: "100vh" }}>
       {/* Background video */}
@@ -30,7 +36,6 @@ function App() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "flex-start",
           padding: "40px",
           paddingBottom: "120px",
           textAlign: "center",
@@ -46,72 +51,25 @@ function App() {
           Less waste. More clarity. Better decisions.
         </p>
 
-        {/* CONTRACTORS Section */}
-        <div
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            padding: "30px",
-            borderRadius: "10px",
-            maxWidth: "900px",
-            width: "100%",
-            textAlign: "left"
-          }}
-        >
-          <h2 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>🏗️ CONTRACTORS</h2>
-          <p style={{ fontWeight: "600", fontSize: "1.1rem", marginBottom: "1rem" }}>
-            High-Tech Solutions to Execute with Precision
-            <br />
-            Using Drones, GNSS, Total Stations & 3D Modeling
-          </p>
-
-          <h3 style={{ fontSize: "1rem", marginTop: "1.5rem" }}>📐 Construction Layout & Field Execution</h3>
-          <ul>
-            <li>GPS & Total Station layout for footings, gridlines, services, curb, and grading</li>
-            <li>Precision staking for excavation, concrete, and utility installation</li>
-          </ul>
-
-          <h3 style={{ fontSize: "1rem", marginTop: "1.5rem" }}>📊 Quantities & Modeling</h3>
-          <ul>
-            <li>Cut/Fill & stockpile volume calculations using drone data</li>
-            <li>3D execution modeling for site coordination and staging</li>
-            <li>Conflict & clash detection modeling to identify issues before they arise</li>
-          </ul>
-
-          <h3 style={{ fontSize: "1rem", marginTop: "1.5rem" }}>📸 Site Documentation</h3>
-          <ul>
-            <li>Drone-based as-built capture and progress tracking</li>
-            <li>Orthomosaics, point clouds, and georeferenced site data</li>
-            <li>High-precision as-built measurements for record or verification</li>
-          </ul>
-
-          <h3 style={{ fontSize: "1rem", marginTop: "1.5rem" }}>📄 Preconstruction Support</h3>
-          <ul>
-            <li>Drawing & plan reviews for constructability and clarity</li>
-            <li>Material takeoffs and quantity estimates directly from models</li>
-            <li>Assistance with RFIs and field coordination</li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Sticky footer */}
-      <div
-        style={{
-          position: "fixed",
-          bottom: 0,
-          width: "100%",
-          textAlign: "center",
-          padding: "10px 0",
-          fontSize: "0.85rem",
-          color: "#ccc",
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          borderTop: "1px solid #444"
-        }}
-      >
-        <div>Serving North Bay and nearby regions.</div>
-        <div>jesse.graham@leanbuilds.ca</div>
-      </div>
-    </div>
-  );
-}
-
-export default App;
+        {/* Section Block */}
+        <div style={{ maxWidth: "900px", width: "100%", textAlign: "left" }}>
+          {/* CONTRACTORS */}
+          <h2
+            onClick={() => toggleSection("contractors")}
+            onMouseEnter={() => toggleSection("contractors")}
+            style={{
+              cursor: "pointer",
+              fontSize: "1.5rem",
+              marginBottom: "10px",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              padding: "12px",
+              borderRadius: "8px"
+            }}
+          >
+            🏗️ CONTRACTORS
+          </h2>
+          {activeSection === "contractors" && (
+            <div
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                padding: "20
