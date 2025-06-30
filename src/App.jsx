@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
+  const [hoverText, setHoverText] = useState("");
+
   return (
     <div
       style={{
@@ -28,11 +30,16 @@ function App() {
             display: "flex",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap: "40px"
+            gap: "40px",
+            marginBottom: "20px"
           }}
         >
           <a
             href="#"
+            onMouseEnter={() =>
+              setHoverText("Streamline site prep, layout, and material coordination.")
+            }
+            onMouseLeave={() => setHoverText("")}
             style={{
               textDecoration: "none",
               fontSize: "1rem",
@@ -40,13 +47,15 @@ function App() {
               color: "#0044cc",
               transition: "color 0.2s"
             }}
-            onMouseOver={(e) => (e.target.style.color = "#001f66")}
-            onMouseOut={(e) => (e.target.style.color = "#0044cc")}
           >
             CONTRACTORS
           </a>
           <a
             href="#"
+            onMouseEnter={() =>
+              setHoverText("Support your design process with topographic data and cut/fill insight.")
+            }
+            onMouseLeave={() => setHoverText("")}
             style={{
               textDecoration: "none",
               fontSize: "1rem",
@@ -54,13 +63,15 @@ function App() {
               color: "#0044cc",
               transition: "color 0.2s"
             }}
-            onMouseOver={(e) => (e.target.style.color = "#001f66")}
-            onMouseOut={(e) => (e.target.style.color = "#0044cc")}
           >
             AEC DESIGNERS
           </a>
           <a
             href="#"
+            onMouseEnter={() =>
+              setHoverText("Gain project clarity with visuals and metrics tailored for decision-makers.")
+            }
+            onMouseLeave={() => setHoverText("")}
             style={{
               textDecoration: "none",
               fontSize: "1rem",
@@ -68,12 +79,16 @@ function App() {
               color: "#0044cc",
               transition: "color 0.2s"
             }}
-            onMouseOver={(e) => (e.target.style.color = "#001f66")}
-            onMouseOut={(e) => (e.target.style.color = "#0044cc")}
           >
             OWNERS / STAKEHOLDERS
           </a>
         </div>
+
+        {hoverText && (
+          <p style={{ fontSize: "1rem", color: "#666", maxWidth: "600px", margin: "0 auto" }}>
+            {hoverText}
+          </p>
+        )}
       </div>
     </div>
   );
