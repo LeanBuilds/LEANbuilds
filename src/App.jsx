@@ -72,4 +72,42 @@ function App() {
             <div
               style={{
                 backgroundColor: "rgba(0, 0, 0, 0.5)",
-                padding: "20
+                padding: "20px",
+                borderRadius: "10px",
+                marginBottom: "20px"
+              }}
+            >
+              <p style={{ fontWeight: "600", fontSize: "1.1rem" }}>
+                High-Tech Solutions to Execute with Precision
+                <br />
+                Using Drones, GNSS, Total Stations & 3D Modeling
+              </p>
+
+              <h3>📐 Construction Layout & Field Execution</h3>
+              <ul>
+                <li>GPS & Total Station layout for footings, gridlines, services, curb, and grading</li>
+                <li>Precision staking for excavation, concrete, and utility installation</li>
+              </ul>
+
+              <h3>📊 Quantities & Modeling</h3>
+              <ul>
+                <li>Cut/Fill & stockpile volume calculations using drone data</li>
+                <li>3D execution modeling for site coordination and staging</li>
+                <li>Conflict & clash detection modeling to identify issues before they arise</li>
+              </ul>
+
+              <h3>📸 Site Documentation</h3>
+              <ul>
+                <li>Drone-based as-built capture and progress tracking</li>
+                <li>Orthomosaics, point clouds, and georeferenced site data</li>
+                <li>High-precision as-built measurements for record or verification</li>
+              </ul>
+
+              <h3>📄 Preconstruction Support</h3>
+              <ul>
+                <li>Drawing & plan reviews for constructability and clarity</li>
+                <li>Material takeoffs and quantity estimates directly from models</li>
+                <li>Assistance with RFIs and field coordination</li>
+              </ul>
+            </div>
+          )}
