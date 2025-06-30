@@ -8,27 +8,7 @@ function App() {
   };
 
   return (
-    <div style={{ position: "relative", overflow: "hidden", minHeight: "100vh" }}>
-      {/* Background video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          zIndex: -1
-        }}
-      >
-        <source src="/background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
+    <div style={{ backgroundColor: "#111111", minHeight: "100vh", overflowX: "hidden" }}>
       {/* Page content */}
       <div
         style={{
@@ -39,8 +19,7 @@ function App() {
           padding: "40px",
           paddingBottom: "120px",
           textAlign: "center",
-          color: "#ffffff",
-          textShadow: "0 1px 4px rgba(0,0,0,0.8)"
+          color: "#ffffff"
         }}
       >
         <h1 style={{ fontSize: "3rem", fontWeight: "700", marginBottom: "0.5rem" }}>
@@ -61,7 +40,7 @@ function App() {
               cursor: "pointer",
               fontSize: "1.5rem",
               marginBottom: "10px",
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              backgroundColor: "#222",
               padding: "12px",
               borderRadius: "8px"
             }}
@@ -71,7 +50,7 @@ function App() {
           {activeSection === "contractors" && (
             <div
               style={{
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "#1b1b1b",
                 padding: "20px",
                 borderRadius: "10px",
                 marginBottom: "20px"
@@ -120,7 +99,7 @@ function App() {
               cursor: "pointer",
               fontSize: "1.5rem",
               marginBottom: "10px",
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              backgroundColor: "#222",
               padding: "12px",
               borderRadius: "8px"
             }}
@@ -130,7 +109,7 @@ function App() {
           {activeSection === "designers" && (
             <div
               style={{
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "#1b1b1b",
                 padding: "20px",
                 borderRadius: "10px",
                 marginBottom: "20px"
@@ -148,7 +127,7 @@ function App() {
               cursor: "pointer",
               fontSize: "1.5rem",
               marginBottom: "10px",
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              backgroundColor: "#222",
               padding: "12px",
               borderRadius: "8px"
             }}
@@ -158,7 +137,7 @@ function App() {
           {activeSection === "owners" && (
             <div
               style={{
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                backgroundColor: "#1b1b1b",
                 padding: "20px",
                 borderRadius: "10px",
                 marginBottom: "20px"
@@ -179,9 +158,9 @@ function App() {
           textAlign: "center",
           padding: "10px 0",
           fontSize: "0.85rem",
-          color: "#ccc",
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          borderTop: "1px solid #444"
+          color: "#999",
+          backgroundColor: "#111",
+          borderTop: "1px solid #333"
         }}
       >
         <div>Serving North Bay and nearby regions.</div>
