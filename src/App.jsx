@@ -104,7 +104,7 @@ function App() {
               borderRadius: "8px"
             }}
           >
-            🧱 AEC DESIGNERS
+            📐 AEC DESIGNERS
           </h2>
           {activeSection === "designers" && (
             <div
@@ -115,7 +115,39 @@ function App() {
                 marginBottom: "20px"
               }}
             >
-              <p>Placeholder for AEC DESIGNERS content...</p>
+              <p style={{ fontWeight: "600", fontSize: "1.1rem" }}>
+                Digital Precision to Empower Creative Intent
+                <br />
+                We support architects, engineers, and technologists with tools and services that reduce site uncertainty and improve design coordination.
+              </p>
+
+              <h3>📏 Site Reality Capture</h3>
+              <ul>
+                <li>Drone-based photogrammetry and 3D scans for existing conditions</li>
+                <li>Topographic mapping with georeferenced elevation data</li>
+                <li>As-built documentation to verify construction against design</li>
+              </ul>
+
+              <h3>🧱 Design Validation & Coordination</h3>
+              <ul>
+                <li>Overlay models on site data to detect geometric or spatial conflicts</li>
+                <li>Rapid comparison of plans against surveyed benchmarks</li>
+                <li>Clash detection with existing infrastructure, grade, or structure</li>
+              </ul>
+
+              <h3>🧰 Technical Integration</h3>
+              <ul>
+                <li>DXF, RVT, DWG, and point cloud support</li>
+                <li>Annotated plan markups and shared design visuals</li>
+                <li>Assistance with BIM/CAD model prep for field execution</li>
+              </ul>
+
+              <h3>🔄 Design Development & Review</h3>
+              <ul>
+                <li>Remote or on-site support during concept, DD, or CD stages</li>
+                <li>Constructability feedback from field experience</li>
+                <li>Visual tools to communicate complex ideas to clients or stakeholders</li>
+              </ul>
             </div>
           )}
 
