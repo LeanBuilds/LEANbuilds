@@ -9,7 +9,6 @@ function App() {
 
   return (
     <div style={{ backgroundColor: "#111111", minHeight: "100vh", overflowX: "hidden" }}>
-      {/* Page content */}
       <div
         style={{
           fontFamily: "Segoe UI",
@@ -30,9 +29,7 @@ function App() {
           Less waste. More clarity. Better decisions.
         </p>
 
-        {/* Section Block */}
         <div style={{ maxWidth: "900px", width: "100%", textAlign: "left" }}>
-          {/* CONTRACTORS */}
           <h2
             onClick={() => toggleSection("contractors")}
             onMouseEnter={() => toggleSection("contractors")}
@@ -91,7 +88,6 @@ function App() {
             </div>
           )}
 
-          {/* AEC DESIGNERS */}
           <h2
             onClick={() => toggleSection("designers")}
             onMouseEnter={() => toggleSection("designers")}
@@ -137,7 +133,7 @@ function App() {
 
               <h3>🧰 Technical Integration</h3>
               <ul>
-                <li>DXF, RVT, DWG, and point cloud support</li>
+                <li>SKP, RVT, DWG, and point cloud support</li>
                 <li>Annotated plan markups and shared design visuals</li>
                 <li>Assistance with BIM/CAD model prep for field execution</li>
               </ul>
@@ -151,7 +147,6 @@ function App() {
             </div>
           )}
 
-          {/* OWNERS / STAKEHOLDERS */}
           <h2
             onClick={() => toggleSection("owners")}
             onMouseEnter={() => toggleSection("owners")}
@@ -181,7 +176,6 @@ function App() {
         </div>
       </div>
 
-      {/* Sticky footer */}
       <div
         style={{
           position: "fixed",
