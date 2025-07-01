@@ -30,6 +30,7 @@ function App() {
         </p>
 
         <div style={{ maxWidth: "900px", width: "100%", textAlign: "left" }}>
+          {/* CONTRACTORS */}
           <h2
             onClick={() => toggleSection("contractors")}
             onMouseEnter={() => toggleSection("contractors")}
@@ -88,6 +89,7 @@ function App() {
             </div>
           )}
 
+          {/* AEC DESIGNERS */}
           <h2
             onClick={() => toggleSection("designers")}
             onMouseEnter={() => toggleSection("designers")}
@@ -147,6 +149,7 @@ function App() {
             </div>
           )}
 
+          {/* OWNERS / STAKEHOLDERS */}
           <h2
             onClick={() => toggleSection("owners")}
             onMouseEnter={() => toggleSection("owners")}
@@ -170,12 +173,45 @@ function App() {
                 marginBottom: "20px"
               }}
             >
-              <p>Placeholder for OWNERS / STAKEHOLDERS content...</p>
+              <p style={{ fontWeight: "600", fontSize: "1.1rem" }}>
+                Insight-Driven Planning for Smarter Decisions
+                <br />
+                We provide developers, owners, and community stakeholders with visual data and field intelligence that enhances transparency, reduces surprises, and supports confident project planning.
+              </p>
+
+              <h3>📍 Predevelopment Site Intelligence</h3>
+              <ul>
+                <li>Topographic and aerial mapping for early-phase site assessment</li>
+                <li>Identification of drainage, slope, and access challenges</li>
+                <li>High-resolution imagery and overlays for site marketing and approvals</li>
+              </ul>
+
+              <h3>📊 Visual Progress Tracking & Reporting</h3>
+              <ul>
+                <li>Drone-captured orthomosaics and 3D models of site conditions</li>
+                <li>Timeline comparisons to show real-world progress</li>
+                <li>Reports and exports ready for investors, funding partners, or agencies</li>
+              </ul>
+
+              <h3>💬 Communication & Risk Mitigation</h3>
+              <ul>
+                <li>Tools to align expectations between field and boardroom</li>
+                <li>Visuals that clarify plans, phasing, and scope</li>
+                <li>Early detection of potential delays, conflicts, or miscommunication</li>
+              </ul>
+
+              <h3>📎 Documentation & Records</h3>
+              <ul>
+                <li>As-built models to retain project history and aid future planning</li>
+                <li>Files, formats, and annotations organized for long-term value</li>
+                <li>Owner-ready deliverables, accessible long after project closeout</li>
+              </ul>
             </div>
           )}
         </div>
       </div>
 
+      {/* Sticky footer */}
       <div
         style={{
           position: "fixed",
