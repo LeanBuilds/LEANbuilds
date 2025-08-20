@@ -1,12 +1,281 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LEANBuilds</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lean Builds — Construction, Engineering & Surveying in North Bay, ON</title>
+  <meta name="description" content="Lean Builds helps owners, developers, and AEC teams in North Bay, Ontario deliver projects with less waste and more clarity. Services: general contracting, permitting & HVAC design coordination, drone surveying, CAD/drafting, quantity takeoffs, and shop‑ready cut sheets." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lean Builds — Less waste. More clarity. Better decisions." />
+  <meta property="og:description" content="Construction • Engineering • Surveying. Serving North Bay and nearby regions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.leanbuilds.ca/" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0f172a/e2e8f0&text=Lean+Builds" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- Tailwind CDN (lightweight for single‑file demo) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small extras for this demo */
+    .glass { background: linear-gradient(120deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04)); backdrop-filter: blur(8px); }
+  </style>
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lean Builds",
+    "url": "https://www.leanbuilds.ca/",
+    "email": "jesse.graham@leanbuilds.ca",
+    "telephone": "+1-705-493-0733",
+    "logo": "https://dummyimage.com/600x200/0f172a/e2e8f0&text=Lean+Builds",
+    "sameAs": [
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-300/30">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-950/70 glass">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="inline-flex items-center gap-2">
+        <span class="h-3 w-3 rounded-full bg-emerald-400"></span>
+        <span class="font-semibold tracking-wide">Lean Builds</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="opacity-80 hover:opacity-100">Services</a>
+        <a href="#projects" class="opacity-80 hover:opacity-100">Projects</a>
+        <a href="#process" class="opacity-80 hover:opacity-100">Process</a>
+        <a href="#about" class="opacity-80 hover:opacity-100">About</a>
+        <a href="#contact" class="inline-flex items-center px-3 py-1.5 rounded-xl bg-emerald-500 text-slate-950 font-semibold hover:brightness-110">Get a quote</a>
+      </nav>
+      <button aria-label="Open Menu" class="md:hidden inline-flex items-center justify-center rounded-xl border border-slate-800 px-3 py-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative isolate overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-slate-900 via-slate-950 to-black"></div>
+    <div class="mx-auto max-w-7xl px-4 py-20 md:py-28">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-800/70 bg-slate-900/60 px-3 py-1 text-xs text-slate-300">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            Serving North Bay & nearby regions
+          </div>
+          <h1 class="text-4xl font-bold leading-tight sm:text-5xl">Less waste. <span class="text-emerald-400">More clarity.</span><br class="hidden sm:block"/>Better decisions.</h1>
+          <p class="mt-4 max-w-xl text-slate-300">Construction • Engineering • Surveying — we help owners, developers, and AEC teams plan and build smarter with lean methods, digital tools, and field‑driven execution.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-slate-950 hover:brightness-110">Request a quote</a>
+            <a href="tel:+17054930733" class="inline-flex items-center gap-2 rounded-xl border border-slate-800 px-5 py-3 font-semibold hover:bg-slate-900/50">Call 705‑493‑0733</a>
+          </div>
+          <p class="mt-3 text-xs text-slate-400">Fast response. Clear scopes. Tight execution.</p>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] w-full overflow-hidden rounded-3xl border border-slate-800 bg-slate-900">
+            <!-- Replace this placeholder with a project photo later -->
+            <div class="flex h-full w-full items-center justify-center text-slate-400">Project imagery / drone topo / shop‑ready cut sheets</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="border-t border-slate-800/60 bg-slate-950">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <h2 class="text-2xl font-semibold">Services</h2>
+      <p class="mt-2 max-w-2xl text-slate-300">Focused offerings that remove friction from your project. Hire one service or bring us in end‑to‑end.</p>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card -->
+        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <h3 class="font-semibold">General Contracting</h3>
+          <p class="mt-1 text-sm text-slate-300">ICI and residential builds with lean planning, pull scheduling, and solid trade coordination.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <h3 class="font-semibold">Permitting & HVAC Design Coordination</h3>
+          <p class="mt-1 text-sm text-slate-300">Package submissions the City will accept. Separate PDFs per requirements, quick cycles, fewer holds.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <h3 class="font-semibold">Drone Surveying & Topographic Mapping</h3>
+          <p class="mt-1 text-sm text-slate-300">Advanced RPAS workflows for orthomosaics, stockpile quantities, and site logistics planning.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <h3 class="font-semibold">CAD / Drafting & Shop‑Ready Cut Sheets</h3>
+          <p class="mt-1 text-sm text-slate-300">Production‑ready PDFs with sequential cutting plans, offcut labelling, and no‑splice rules.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <h3 class="font-semibold">Concrete & Masonry Estimating</h3>
+          <p class="mt-1 text-sm text-slate-300">Clear takeoffs and scope notes for RFIs, change orders, and award decisions.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <h3 class="font-semibold">Project Management & Scheduling</h3>
+          <p class="mt-1 text-sm text-slate-300">Field‑first leadership: hit milestones, keep trades aligned, and communicate proactively.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="border-t border-slate-800/60 bg-slate-950">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-semibold">Recent Work</h2>
+          <p class="mt-2 max-w-2xl text-slate-300">A few representative engagements. Swap these with your own project cards later.</p>
+        </div>
+        <a href="#contact" class="hidden md:inline-flex rounded-xl border border-slate-800 px-4 py-2 text-sm hover:bg-slate-900/50">Discuss a project</a>
+      </div>
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        <article class="rounded-2xl border border-slate-800 bg-slate-900">
+          <div class="aspect-[16/10] w-full rounded-t-2xl bg-slate-800"></div>
+          <div class="p-5">
+            <h3 class="font-semibold">SJSH Washroom Renovations</h3>
+            <p class="mt-1 text-sm text-slate-300">Trade coordination, scheduling, and finishes—delivered to a firm school re‑opening date.</p>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900">
+          <div class="aspect-[16/10] w-full rounded-t-2xl bg-slate-800"></div>
+          <div class="p-5">
+            <h3 class="font-semibold">Meadowwood Court — Permit Package</h3>
+            <p class="mt-1 text-sm text-slate-300">HVAC compliance updates and clean document structure for municipal review.</p>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900">
+          <div class="aspect-[16/10] w-full rounded-t-2xl bg-slate-800"></div>
+          <div class="p-5">
+            <h3 class="font-semibold">Drone Topo & Quantities</h3>
+            <p class="mt-1 text-sm text-slate-300">Orthos and stockpile volumes to plan earthworks and trucking efficiently.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="border-t border-slate-800/60 bg-slate-950">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <h2 class="text-2xl font-semibold">How we work</h2>
+      <div class="mt-8 grid gap-4 md:grid-cols-4">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <p class="text-xs uppercase tracking-wider text-slate-400">01</p>
+          <h3 class="mt-2 font-semibold">Clarify</h3>
+          <p class="mt-1 text-sm text-slate-300">Scope, constraints, and success criteria. One page A3 so everyone aligns.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <p class="text-xs uppercase tracking-wider text-slate-400">02</p>
+          <h3 class="mt-2 font-semibold">Plan</h3>
+          <p class="mt-1 text-sm text-slate-300">Pull planning and look‑ahead schedules anchored to real crew capacity.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <p class="text-xs uppercase tracking-wider text-slate-400">03</p>
+          <h3 class="mt-2 font-semibold">Execute</h3>
+          <p class="mt-1 text-sm text-slate-300">Daily huddles, simple visuals, tight QA/QC, and fast RFIs when needed.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+          <p class="text-xs uppercase tracking-wider text-slate-400">04</p>
+          <h3 class="mt-2 font-semibold">Improve</h3>
+          <p class="mt-1 text-sm text-slate-300">After‑action reviews to lock in wins and eliminate recurring pain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="border-t border-slate-800/60 bg-slate-950">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-semibold">About Lean Builds</h2>
+          <p class="mt-2 text-slate-300">We’re a North Bay–based construction partner led by Jesse Graham. Our mission is simple: deliver what matters, eliminate what doesn’t, and communicate clearly throughout.</p>
+          <ul class="mt-4 space-y-2 text-slate-300">
+            <li>• Advanced RPAS pilot with practical construction surveying workflows.</li>
+            <li>• Strong coordination across trades, consultants, and owners.</li>
+            <li>• Builder‑friendly documents: clear, accurate, and field‑ready.</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6">
+          <h3 class="font-semibold">Quick facts</h3>
+          <dl class="mt-3 grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <dt class="text-slate-400">Location</dt>
+              <dd>North Bay, Ontario</dd>
+            </div>
+            <div>
+              <dt class="text-slate-400">Phone</dt>
+              <dd><a class="underline" href="tel:+17054930733">705‑493‑0733</a></dd>
+            </div>
+            <div>
+              <dt class="text-slate-400">Email</dt>
+              <dd><a class="underline" href="mailto:jesse.graham@leanbuilds.ca">jesse.graham@leanbuilds.ca</a></dd>
+            </div>
+            <div>
+              <dt class="text-slate-400">Focus</dt>
+              <dd>Construction • Engineering • Surveying</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t border-slate-800/60 bg-slate-950">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-semibold">Request a quote</h2>
+          <p class="mt-2 text-slate-300">Tell us about your project and we’ll reply with next steps the same day.</p>
+          <form class="mt-6 space-y-4" method="POST" action="#" onsubmit="event.preventDefault(); window.location.href='mailto:jesse.graham@leanbuilds.ca?subject=Quote%20Request%20-%20Lean%20Builds&body='+encodeURIComponent(document.getElementById('msg').value);">
+            <div>
+              <label for="name" class="block text-sm text-slate-300">Name</label>
+              <input id="name" name="name" required class="mt-1 w-full rounded-xl border border-slate-800 bg-slate-900 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm text-slate-300">Email</label>
+              <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-slate-800 bg-slate-900 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
+            </div>
+            <div>
+              <label for="msg" class="block text-sm text-slate-300">Project brief</label>
+              <textarea id="msg" name="message" rows="5" required class="mt-1 w-full rounded-xl border border-slate-800 bg-slate-900 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Site, scope, constraints, timeline…"></textarea>
+            </div>
+            <button type="submit" class="inline-flex items-center rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-slate-950 hover:brightness-110">Send</button>
+            <p class="text-xs text-slate-400">Prefer email? <a class="underline" href="mailto:jesse.graham@leanbuilds.ca">jesse.graham@leanbuilds.ca</a></p>
+          </form>
+        </div>
+        <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6">
+          <h3 class="font-semibold">What you’ll get</h3>
+          <ul class="mt-3 space-y-2 text-slate-300 text-sm">
+            <li>• A clear scope breakdown and assumptions.</li>
+            <li>• A realistic schedule aligned to trade capacity.</li>
+            <li>• Transparent pricing (no surprises).</li>
+            <li>• A named point of contact from day one.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/60 bg-slate-950">
+    <div class="mx-auto max-w-7xl px-4 py-10 text-sm text-slate-400">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="y"></span> Lean Builds. All rights reserved.</p>
+        <nav class="flex gap-5">
+          <a href="#services" class="hover:text-slate-200">Services</a>
+          <a href="#projects" class="hover:text-slate-200">Projects</a>
+          <a href="#about" class="hover:text-slate-200">About</a>
+          <a href="#contact" class="hover:text-slate-200">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
 </html>
